@@ -1,0 +1,28 @@
+﻿@model IEnumerable<SonalCRUD_ADO.Models.Student>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <table class="table" >
+        <tr backgroun-colour="light-blue">
+            <th>Roll No.</th>
+            <th>Name</th>
+            <th>Stnd</th>
+            <th>City</th>
+            <th>Stream</th>
+           
+        </tr>
+        @foreach ( var std in Model)
+        {
+    <tr>
+        <td>@std.Rollno.</td>
+        <td>@std.Name</td>
+        <td>@std.Stnd</td>
+        <td>@std.City</td>
+        <td>@std.Stream</td>
+    </tr>
+        }
+    </table>
+</div>
